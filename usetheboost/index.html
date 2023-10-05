@@ -1,0 +1,103 @@
+<!DOCTYPE HTML>
+<!--
+    Hyperspace by HTML5 UP
+    html5up.net | @ajlkn
+    Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+    <head>
+        <title>Use The Boost! out on Android</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+        <link rel="stylesheet" href="../assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+    </head>
+    <body class="is-preload">
+
+        <!-- Header -->
+        <header id="header">
+            <a href="/" class="title">Martin T. Schultz</a>
+            <nav>
+                <ul>
+                    <li><a href="/">Go back</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Main -->
+            <section id="main" class="wrapper">
+                <div class="inner">
+                    <h1 class="major" style="margin-bottom:0.5em">Use The Boost! out on Android</h1>
+                    <a href="https://play.google.com/store/apps/details?id=com.NinjaPanda.UseTheBoost" target="_blank" style="border:0"><img src="featured.png" style="max-width:500px; margin-bottom: 1em;"></a>
+                    <h2>About the project</h2>
+                    <p>
+                        Use The Boost! is an Android game made in Godot, developed by me.<br>
+                        It's free and without any forced ads.<br>
+                        <a href="https://play.google.com/store/apps/details?id=com.NinjaPanda.UseTheBoost" target="_blank">Try it here.</a>
+                    </p>
+                    <p>
+                        After many years of constantly prototyping big ideas, I wanted to actually finish a game.<br>
+                        It had to be a game that I'd enjoy, and it had to be very small.<br>
+                    </p>
+                    <h2>Tools I used</h2>
+                    <p>
+                        The game itself was made in <a href="https://godotengine.org/">Godot</a>.<br>
+                        Godot is open source, which means it's also completely free.
+                    </p>
+                    <p>
+                        The graphics were made in <a href="https://www.aseprite.org/">Aseprite</a>.<br>
+                        A very fun and great pixel art tool.<br>
+                        You could probably also just use MS Paint, if you want a free option.
+                    </p>
+                    <p>
+                        The sounds were made in <a href="https://www.ableton.com/">Ableton</a> with <a href="https://xferrecords.com/products/serum">Xfer Serum</a><br>
+                        Ableton and Serum are both amazing, but also incredibly overkill for this project.<br>
+                        You can easily create great retro game sounds, for free.<br>
+                        I haven't played much with it, but check out <a href="https://sfxr.me/">jsfxr</a>.
+                    </p>
+                    <h2>Tricks</h2>
+                    <p>
+                        The spaceship never moves. I instead move the walls and the stars.<br>
+                        This is so I avoid huge numbers, and so I can check the location of the walls, without basing it off of the spaceship.<br>
+                        It also contains everything in the same position, which makes it a lot easier to work with.
+                    </p>
+                    <p>
+                        To give a sense of depth, I made some stars slower and some faster, to make it seem as if some are closer, and some are further.<br>
+                        The really fast stars are given larger sprites, to further sell the idea of depth.
+                    </p>
+                    <p>
+                        The length of the walls are set programically.<br>
+                        You can very easily create repeating sprites in Godot, which enabled me to ensure that the game would look right, on any device, and not use overly large sprites.
+                    </p>
+                    <h2>Other notes</h2>
+                    <p>
+                        The hardest thing to implement, was AdMob. (advertisements)<br>
+                        It gave me a lot of trouble, and at one point it would constantly either crash my game, or the engine.<br>
+                        I moved the project into a new folder, and then it randomly started working correctly.<br>
+                        Be sure to pay close attention to everything, when implementing AdMob.<br>
+                        I used the <a href="https://github.com/Shin-NiL/Godot-Android-Admob-Plugin">plugin by Shin-NiL</a>.
+                    </p>
+                    <p>
+                        Google is very strict when it comes to targeting kids.<br>
+                        Be sure to write "watch ad ..." on any button that activates an ad, or your app may be rejected.<br>
+                        I learned that "watch video ..." is not good enough.<br>
+                        And with that said, I think it's completely fair.
+                </div>
+            </section>
+
+        </div>
+
+        <!-- Footer -->
+        <footer id="footer" class="wrapper alt">
+            <div class="inner">
+                <ul class="menu">
+                    <li>Martin Thaulow Schultz</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+                </ul>
+            </div>
+        </footer>
+
+    </body>
+</html>
